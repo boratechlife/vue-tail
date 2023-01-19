@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import './style.css';
+import VueSplide from '@splidejs/vue-splide';
+import App from './App.vue';
+// Default theme
+import '@splidejs/vue-splide/css';
 
-createApp(App).mount('#app')
+createApp(App).use(VueSplide).mount('#app');
