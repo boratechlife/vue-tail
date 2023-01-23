@@ -9,7 +9,7 @@ const count = ref(0);
 <template>
   <section class="bg-white py-10 lg:py-20">
     <div class="container px-4 lg:px-20 mx-auto">
-      <div class="flex w-full items-center flex-wrap lg:flex-nowrap">
+      <div class="flex w-full items-center flex-wrap-reverse lg:flex-nowrap">
         <div class="w-full lg:w-1/2 text-black">
           <h4 class="text-xl lg:text-5xl w-full mb-16 font-bold leading-normal">
             Create your own Fragrance! Start by selecting your keywords

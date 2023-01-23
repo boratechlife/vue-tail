@@ -11,6 +11,13 @@ const options = ref({
   perPage: 2.5,
   gap: 30,
   padding: 30,
+  breakpoints: {
+    640: {
+      perPage: 1,
+      arrows: false,
+      pagination: true,
+    },
+  },
   classes: {
     // Add classes for arrows.
     arrows: 'splide__arrows custom-arrows ',
@@ -26,14 +33,18 @@ const options = ref({
 </script>
 <template>
   <!-- Popular candles & collections: -->
-  <section class="bg-[#FFF7F3] pl-[100px] pr-0 grid grid-cols-3 gap-28">
+  <section
+    class="bg-[#FFF7F3] lg:pl-[100px] pr-0 grid grid-cols-1 lg:grid-cols-3 lg:gap-28"
+  >
     <div class="my-auto">
       <img src="/coloured.webp" alt="" />
     </div>
 
     <!-- right -->
-    <div class="col-span-2 flex flex-col py-[100px] mb-10">
-      <p class="font-bold pl-6 text-[50px] leading-[60px] font-Vollkorn">
+    <div class="lg:col-span-2 flex flex-col py-[100px] mb-10">
+      <p
+        class="font-bold pl-6 text-3xl lg:text-[50px] leading-[60px] font-Vollkorn"
+      >
         Popular candles & <br />
         collections:
       </p>

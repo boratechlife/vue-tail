@@ -11,6 +11,12 @@ const options = ref({
   perPage: 3,
   gap: 30,
   perMove: 1,
+  breakpoints: {
+    640: {
+      perPage: 1,
+      arrows: false,
+    },
+  },
   padding: 30,
   classes: {
     // Add classes for arrows.
@@ -27,8 +33,8 @@ const options = ref({
 </script>
 <template>
   <!-- Fragrances -->
-  <section class="px-[110px] flex flex-col gap-10 py-[140px]">
-    <div class="grid grid-cols-2 items-center">
+  <section class="px-4 lg:px-[110px] flex flex-col gap-10 py-[140px]">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
       <!-- left -->
       <div class="flex flex-col">
         <p class="font-bold text-[50px] leading-[120%] font-Vollkorn">

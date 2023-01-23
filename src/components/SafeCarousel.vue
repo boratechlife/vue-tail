@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import ReviewCard from './ReviewCard.vue';
+import SafeCard from './SafeCard.vue';
 
 defineProps({
   msg: String,
@@ -11,10 +11,12 @@ const options = ref({
   perPage: 3,
   gap: 20,
   perMove: 1,
+  destroy: true,
   padding: { right: '4.5rem' },
   breakpoints: {
     640: {
       perPage: 1,
+      destroy: false,
     },
   },
   autoplay: true,
@@ -34,17 +36,28 @@ const options = ref({
 </script>
 
 <template>
-  <section class="pb-20 bg-white">
+  <section class="pb-20 mt-10 bg-[#F1F7E9] lg:hidden">
     <div class="container px-4 lg:px-20 mx-auto">
       <Splide :options="options" aria-label="My Favorite Images">
         <SplideSlide>
-          <ReviewCard />
+          <SafeCard description="1% of revenues donated to no-profits">
+            <img src="/custom-logo.svg" alt="" srcset="" />
+          </SafeCard>
         </SplideSlide>
         <SplideSlide>
-          <ReviewCard />
+          <SafeCard description="1% of revenues donated to no-profits">
+            <img src="/custom-logo.svg" alt="" srcset="" />
+          </SafeCard>
         </SplideSlide>
         <SplideSlide>
-          <ReviewCard />
+          <SafeCard description="1% of revenues donated to no-profits">
+            <img src="/custom-logo.svg" alt="" srcset="" />
+          </SafeCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SafeCard description="1% of revenues donated to no-profits">
+            <img src="/custom-logo.svg" alt="" srcset="" />
+          </SafeCard>
         </SplideSlide>
       </Splide>
     </div>

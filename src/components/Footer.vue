@@ -12,10 +12,10 @@ const count = ref(0);
   <!-- FOOTER -->
 
   <footer
-    class="bg-dark px-[110px] pt-[110px] flex flex-col gap-20 text-white pb-8 mt-auto rounded-t-[60px]"
+    class="bg-dark px-4 lg:px-[110px] pt-[110px] flex flex-col gap-20 text-white pb-8 mt-auto rounded-t-[60px]"
   >
     <!-- subscribe newsletter -->
-    <section class="flex justify-between mb-28">
+    <section class="flex flex-wrap lg:flex-nowrap justify-between mb-28">
       <div class="text-white">
         <h1 class="text-[44px] leading-[110%] mb-5 font-extrabold">
           Subscribe to our <br />
@@ -27,7 +27,10 @@ const count = ref(0);
         </p>
       </div>
 
-      <form action="" class="grid grid-cols-2 content-end gap-10">
+      <form
+        action=""
+        class="grid grid-cols-1 lg:grid-cols-2 content-end gap-10"
+      >
         <!-- First Name -->
         <div class="input-field flex flex-col relative">
           <input
@@ -79,13 +82,15 @@ const count = ref(0);
           </label>
         </div>
 
-        <button class="bg-red py-5 px-[100px] h-max text-white rounded-[40px]">
+        <button
+          class="bg-red py-5 lg:px-[100px] h-max text-white rounded-[40px]"
+        >
           Subscribe Now
         </button>
       </form>
     </section>
 
-    <section class="grid grid-cols-9 gap-2">
+    <section class="grid grid-cols-1 lg:grid-cols-9 gap-2">
       <!-- brand -->
       <div class="flex gap-8 flex-col col-span-3">
         <a href="/">
@@ -146,7 +151,9 @@ const count = ref(0);
       <!-- google success -->
       <div class="col-span-2 flex gap-8 flex-col">
         <!-- Reviews -->
-        <div class="flex p-5 bg-white rounded-[30px] gap-1">
+        <div
+          class="flex flex-wrap lg:flex-nowrap p-5 bg-white rounded-[30px] gap-1"
+        >
           <img src="/google.webp" alt="" />
           <div class="border-l border-dark px-1 flex flex-col">
             <div class="flex items-center gap-5">

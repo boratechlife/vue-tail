@@ -14,9 +14,10 @@ import Reviews from './components/Reviews.vue';
     <Header />
     <Hero />
     <Reviews />
-    <SafeSection />
-    <CreatedSection />
     <Popular />
+    <CreatedSection />
+    <SafeSection />
+
     <Fragrance />
     <Footer />
   </div>

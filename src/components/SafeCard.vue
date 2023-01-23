@@ -12,7 +12,7 @@ const count = ref(0);
 
 <template>
   <div
-    class="card w-1/4 text-sm font-bold flex flex-col items-center gap-4 bg-white shadow-sm rounded p-4 py-6"
+    class="card w-full lg:w-1/4 text-sm font-bold flex flex-col items-center gap-4 bg-white shadow-sm rounded p-4 py-6"
   >
     <div>
       <slot> </slot>
